@@ -58,7 +58,7 @@ namespace MapsuiMauiZoomToBoundingBoxSampleApp
       var bounds = new MRect(minX, minY, maxX, maxY).Grow(500);
 
       // Zoom the map to the bounds.
-      this._mapControl.Map.Navigator.ZoomToBox(box: bounds, boxFit: MBoxFit.Fill);
+      this._mapControl.Map.Navigator.ZoomToBox(box: bounds, boxFit: MBoxFit.Fit);
     }
   }
 
